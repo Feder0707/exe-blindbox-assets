@@ -1,0 +1,297 @@
+{
+  "id": "navidad",
+  "name": "Christmas Cookie House",
+  "boxWord": "cookie house",
+  "colors": {
+    "bg": "#fff8ea",
+    "accent": "#8f1c22",
+    "text": "#5e0f14",
+    "gold": "#e6c27c"
+  },
+  "box": {
+    "body": "box_body.webp",
+    "lid": "box_lid.webp",
+    "lidWidth": 1.12,
+    "lidBottom": 0.998,
+    "seam": 115,
+    "seal": "box_seal.webp",
+    "sealWidth": 1.03,
+    "sealDy": 4,
+    "piece": "seal_piece.webp",
+    "pieces": 10,
+    "puffs": [
+      "puff0.webp",
+      "puff1.webp",
+      "puff2.webp",
+      "puff3.webp",
+      "puff4.webp",
+      "puff5.webp",
+      "puff6.webp",
+      "puff7.webp"
+    ],
+    "popWord": "POP!"
+  },
+  "sets": [
+    {
+      "id": "cookies",
+      "name": "Cookies"
+    },
+    {
+      "id": "candy",
+      "name": "Sweets"
+    },
+    {
+      "id": "decor",
+      "name": "Decorations"
+    },
+    {
+      "id": "special",
+      "name": "Specials"
+    }
+  ],
+  "items": [
+    {
+      "id": "gingerbread_boy",
+      "name": "Gingerbread Boy",
+      "set": "cookies",
+      "rarity": "common",
+      "img": "c_gingerbread_boy.webp"
+    },
+    {
+      "id": "gingerbread_girl",
+      "name": "Gingerbread Girl",
+      "set": "cookies",
+      "rarity": "common",
+      "img": "c_gingerbread_girl.webp"
+    },
+    {
+      "id": "star_cookie",
+      "name": "Sugar Star",
+      "set": "cookies",
+      "rarity": "common",
+      "img": "c_star_cookie.webp"
+    },
+    {
+      "id": "iced_cookie",
+      "name": "Sleepy Sugar Cookie",
+      "set": "cookies",
+      "rarity": "common",
+      "img": "c_iced_cookie.webp"
+    },
+    {
+      "id": "snowman_cookie",
+      "name": "Sugar Snowman",
+      "set": "cookies",
+      "rarity": "rare",
+      "img": "c_snowman_cookie.webp"
+    },
+    {
+      "id": "reindeer_cookie",
+      "name": "Frosted Reindeer",
+      "set": "cookies",
+      "rarity": "rare",
+      "img": "c_reindeer_cookie.webp"
+    },
+    {
+      "id": "nutcracker",
+      "name": "Nutcracker",
+      "set": "cookies",
+      "rarity": "epic",
+      "img": "c_nutcracker.webp"
+    },
+    {
+      "id": "candy_cane",
+      "name": "Candy Cane",
+      "set": "candy",
+      "rarity": "common",
+      "img": "c_candy_cane.webp"
+    },
+    {
+      "id": "peppermint",
+      "name": "Peppermint Swirl",
+      "set": "candy",
+      "rarity": "common",
+      "img": "c_peppermint.webp"
+    },
+    {
+      "id": "cocoa",
+      "name": "Cocoa Mallow",
+      "set": "candy",
+      "rarity": "common",
+      "img": "c_cocoa.webp"
+    },
+    {
+      "id": "snowflake_mallow",
+      "name": "Snowflake Mallow",
+      "set": "candy",
+      "rarity": "common",
+      "img": "c_snowflake_mallow.webp"
+    },
+    {
+      "id": "gumdrop_house",
+      "name": "Gumdrop Hut",
+      "set": "candy",
+      "rarity": "rare",
+      "img": "c_gumdrop_house.webp"
+    },
+    {
+      "id": "macaron",
+      "name": "Mistletoe Macaron",
+      "set": "candy",
+      "rarity": "rare",
+      "img": "c_macaron.webp"
+    },
+    {
+      "id": "fruitcake",
+      "name": "Fruitcake King",
+      "set": "candy",
+      "rarity": "epic",
+      "img": "c_fruitcake.webp"
+    },
+    {
+      "id": "bauble",
+      "name": "Bauble Buddy",
+      "set": "decor",
+      "rarity": "common",
+      "img": "c_bauble.webp"
+    },
+    {
+      "id": "mittens",
+      "name": "Mitten Twins",
+      "set": "decor",
+      "rarity": "common",
+      "img": "c_mittens.webp"
+    },
+    {
+      "id": "stocking",
+      "name": "Cozy Stocking",
+      "set": "decor",
+      "rarity": "common",
+      "img": "c_stocking.webp"
+    },
+    {
+      "id": "holly",
+      "name": "Holly Sprig",
+      "set": "decor",
+      "rarity": "rare",
+      "img": "c_holly.webp"
+    },
+    {
+      "id": "bell",
+      "name": "Jingle Bell",
+      "set": "decor",
+      "rarity": "rare",
+      "img": "c_bell.webp"
+    },
+    {
+      "id": "sleigh",
+      "name": "Gingerbread Sleigh",
+      "set": "decor",
+      "rarity": "epic",
+      "img": "c_sleigh.webp"
+    },
+    {
+      "id": "golden_star",
+      "name": "Golden Star",
+      "set": "special",
+      "rarity": "legendary",
+      "img": "c_golden_star.webp"
+    },
+    {
+      "id": "santa_hat",
+      "name": "Santa's Hat Cookie",
+      "set": "special",
+      "rarity": "legendary",
+      "img": "c_santa_hat.webp"
+    },
+    {
+      "id": "aurora_lollipop",
+      "name": "Aurora Lollipop",
+      "set": "special",
+      "rarity": "legendary",
+      "img": "c_aurora_lollipop.webp"
+    },
+    {
+      "id": "midnight_milk",
+      "name": "Midnight Milk",
+      "set": "special",
+      "rarity": "mythic",
+      "img": "c_midnight_milk.webp"
+    }
+  ],
+  "plaque": "plaque.webp",
+  "icons": {
+    "cookies": "icon_cookie.webp",
+    "candy": "icon_candy.webp",
+    "decor": "icon_bauble.webp",
+    "special": "icon_star.webp",
+    "crumbs": "icon_crumbs.webp"
+  },
+  "banners": {
+    "set": {
+      "img": "banner_set.webp",
+      "w": 600,
+      "text": [
+        0.5,
+        0.56
+      ],
+      "tw": 0.52,
+      "medal": [
+        0.5,
+        0.165,
+        0.11
+      ]
+    },
+    "master": {
+      "img": "banner_master.webp",
+      "w": 600,
+      "text": [
+        0.5,
+        0.57
+      ],
+      "tw": 0.6
+    },
+    "channel": {
+      "img": "banner_channel.webp",
+      "w": 820,
+      "text": [
+        0.5,
+        0.745
+      ],
+      "tw": 0.27
+    }
+  },
+  "hud": {
+    "bar": "hud_bar.webp",
+    "fill": "hud_fill_loop.webp",
+    "gift": "hud_gift.webp",
+    "groove": [
+      0.078,
+      0.913,
+      0.27,
+      0.7
+    ]
+  },
+  "sfx": {
+    "shake": "sfx/shake.mp3",
+    "pop": "sfx/pop.mp3",
+    "reveal_common": "sfx/reveal_common.mp3",
+    "reveal_rare": "sfx/reveal_rare.mp3",
+    "reveal_epic": "sfx/reveal_epic.mp3",
+    "reveal_legendary": "sfx/reveal_legendary.mp3",
+    "reveal_mythic": "sfx/reveal_mythic.mp3",
+    "shiny": "sfx/shiny.mp3",
+    "set": "sfx/set.mp3",
+    "master": "sfx/master.mp3",
+    "channel": "sfx/channel.mp3",
+    "rain_start": "sfx/rain_start.mp3",
+    "rain_claim": "sfx/rain_claim.mp3",
+    "gift_fly": "sfx/gift_fly.mp3",
+    "rain_end": "sfx/rain_end.mp3",
+    "bar_tick": "sfx/bar_tick.mp3",
+    "bake": "sfx/bake.mp3",
+    "crumbs": "sfx/crumbs.mp3",
+    "collection": "sfx/collection.mp3",
+    "bad": "sfx/bad.mp3"
+  }
+}
