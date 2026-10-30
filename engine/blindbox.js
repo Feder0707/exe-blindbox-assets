@@ -1,7 +1,7 @@
-/* EXE BLIND BOX · engine v0.6.0 · form&soul.exe */
+/* EXE BLIND BOX · engine v0.6.1 · form&soul.exe */
 (function () {
   'use strict';
-  const VERSION = '0.6.0';
+  const VERSION = '0.6.1';
   const RAR = ['common', 'rare', 'epic', 'legendary', 'mythic'];
   const RCOL = { common: '#7f97b3', rare: '#3f9fe0', epic: '#9a5ff0', legendary: '#f0b030', mythic: '#ff5fa2' };
   const RLABEL = { common: 'COMMON', rare: 'RARE', epic: 'EPIC', legendary: 'LEGENDARY', mythic: 'MYTHIC' };
@@ -1294,9 +1294,12 @@
         const pulse = (rm ? 0.7 : 0.6 + 0.4 * Math.sin(clock * 3.2)) * clamp(gIn) * gOut;
         // halo
         ctx.save(); ctx.globalCompositeOperation = 'screen';
-        const hr = gs * (0.95 + 0.15 * pulse + 0.35 * ping), hg = ctx.createRadialGradient(gx, gy, 0, gx, gy, hr);
+        // halo: a soft ellipse that always fades out before the bottom edge of the widget (never clipped)
+        const hr = gs * (0.95 + 0.15 * pulse + 0.35 * ping), hcy = gy - 6, ky = Math.min(1, Math.max(0.35, (H - 4 - hcy) / hr));
+        ctx.save(); ctx.translate(gx, hcy); ctx.scale(1, ky);
+        const hg = ctx.createRadialGradient(0, 0, 0, 0, 0, hr);
         hg.addColorStop(0, rgba(IVORY, 0.55 * pulse + 0.3 * ping)); hg.addColorStop(0.45, rgba(CARAMEL, 0.28 * pulse + 0.2 * ping)); hg.addColorStop(1, rgba(CARAMEL, 0));
-        ctx.fillStyle = hg; ctx.fillRect(gx - hr, gy - hr, hr * 2, hr * 2);
+        ctx.fillStyle = hg; ctx.fillRect(-hr, -hr, hr * 2, hr * 2); ctx.restore();
         // three sugar glints orbiting slowly
         if (!rm && gIn > 0.3) for (let i = 0; i < 3; i++) { const a = clock * 1.4 + i * 2.094, r = gs * 0.62; accent(gx + Math.cos(a) * r, gy + Math.sin(a) * r * 0.75, 3.2 + 1.5 * Math.max(0, Math.sin(clock * 4 + i * 2)), (0.5 + 0.5 * Math.sin(clock * 4 + i * 2)) * clamp(gIn) * gOut, rm); }
         ctx.restore();
